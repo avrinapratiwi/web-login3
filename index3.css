@@ -1,0 +1,179 @@
+*{
+    font-family: 'poppins',sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(83, 179, 51, 0.896);
+    height: 100vh;
+    display: flex;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(246, 246, 246);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 0 15px gray;
+}
+
+
+.card-main{
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 8px gainsboro;
+    
+    
+}
+.card-sideimage{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+}
+
+
+.card-main h2{
+    margin-bottom: 40px;
+    color: rgb(83, 179, 51);
+}
+
+.login-account{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 2px;
+    border: none;
+    color: black;
+    box-shadow: 0 3px 6px gainsboro;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    gap:15px;
+}
+
+.login-account:hover{
+    background-color:gainsboro ;
+}
+
+.separator{
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: gray;
+}
+
+.separator span{
+    z-index: 4;
+    background-color: white;
+    position: relative;
+    padding: 0 20px;
+}
+
+.separator::after{
+    position: absolute;
+    content: "";
+    background-color: gray;
+    height: 1px;
+    top: 50%;
+    width: 100%;
+    right: 0;
+}
+
+.input-box{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgb(225, 224, 224);
+    border: none;
+    font-size: 14px;
+    color: black;
+    border-radius: 4px;
+}
+
+.input-box i{
+    transform: rotateY(-50%);
+    position: absolute;
+    top: 35%;
+    right: 10px;
+}
+
+.input-confirm{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;    
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    accent-color: green;
+}
+
+a{
+    text-decoration: none;
+}
+
+.submit{
+    width: 100%;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: rgb(83, 179, 51);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: rgb(58, 126, 35);
+}
+
+.register{
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card-sideimage, .card-main {
+      width: 90%;
+      margin: 10px 0;
+    }
+  
+    .card-sideimage img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+
+
+
+
+
+
